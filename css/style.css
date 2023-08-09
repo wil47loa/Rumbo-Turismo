@@ -1,0 +1,266 @@
+/* Quitamos la margenes de todas las etiquetas */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* creacion de variables css */
+
+:root{
+    --primart-color : #ffff00;
+    --secondary-color: #232323;
+    --titulos : 40px;
+    --parrafo : 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../img/bg-header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header nav{
+    width: 70%;
+    background-color: transparent;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+header nav .logo{
+    transition: .5s;
+}
+
+header nav .logo:hover{
+    transform: scale(0.9);
+}
+
+header nav .menu{
+    display: flex;
+}
+
+nav .menu li{
+    margin: 0 10px ;
+    list-style: none;
+}
+
+.menu li a{
+    color: aliceblue;
+    font-size: var(--parrafo);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+.menu li a:hover{
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+}
+
+header #hero {
+    background-color: transparent;
+    width: 600px;
+    height: 250px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+header #hero img{
+    transition: .5s;
+    cursor: pointer;
+}
+
+header #hero img:hover{
+    transform: rotate(360deg);
+}
+
+header #hero h2{
+
+    color:var(--primart-color);
+    font-size: var(--titulos);
+    padding-top: 25px;
+}
+
+header #hero p{
+    color: #ffffff;
+    font-size: var(--parrafo);
+}
+
+header #hero button{
+    margin-top: 75px;
+    background-color: var(--primart-color);
+    padding: 15px;
+    border-radius: 5px;
+    color: #433d3d;
+    border-color: rgb(0, 0, 0);
+    transition: .5s;
+    cursor: pointer;
+}
+
+header #hero button:hover{
+    background: #000000;
+    border-radius: 0;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+#planes{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background: #ffffff;
+    background-color: transparent;
+}
+
+#planes h2{
+    font-size: var(--titulos);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#planes p{
+    padding-bottom: 50px;
+    font-size: var(--parrafo);
+    color: #000000;
+}
+
+#planes .fila{
+    width: 100%;
+    min-width: 100px;
+    display:flex;
+    margin: 40 auto;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+#planes .fila .col-plan{
+    position: relative;
+}
+
+.fila .col-plan h3{
+    text-transform: uppercase;
+    color: var(--primart-color);
+    font-size: 26px;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+}
+
+.fila .col-plan img{
+    transition:  .5s;
+    cursor: pointer;
+}
+
+.fila .col-plan img:hover{
+    border-radius: 50%;
+}
+
+#destinos{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 100px 0 40px;
+    background: url("../img/bg-destinos.png");
+    background-size: cover;
+    background-position: center;  
+}
+
+#destinos h2{
+    font-size: var(--titulos);
+    color: var(--primart-color);
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+#destinos .fila{
+    display: flex;
+    justify-content: space-between;
+    width: 64%;
+    margin: 50px auto;
+}
+
+.fila .col-destinos{
+    width: 50%;
+    text-align: center;
+}
+
+.fila .col-destinos h3{
+    color: #ffffff;
+    font-size: 32px;
+    text-transform: uppercase;
+} 
+
+#contacto{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 100px 0 120px;
+    background: var(--primart-color);
+}
+#contacto h2{
+    font-size: var(--titulos);
+    margin-bottom: 40px;
+}
+#contacto p{
+    font-size: var(--parrafo);
+    margin-bottom: 40px;
+}
+
+#contacto form .fila{
+    width: 50%;
+    margin:  0 auto;
+
+}
+
+#contacto form .fila{
+    display: flex;
+
+}
+
+form .fila input{
+    width: 50%;
+    padding: 8px 12px;
+    font-size: var(--parrafo);
+    margin: 10px 20px;
+}
+
+form .fila select{
+    width: 53%;
+    padding: 8px 12px;
+    font-size: var(--parrafo);
+    margin: 10px 20px;
+}
+
+form button{
+    background: #7a7a09;
+    color: #ffffff;
+    margin-top: 40px;
+    padding: 12px 20px;
+    font-size: 22px;
+    border-radius: 4px;
+    border: transparent;
+}
+
+footer{
+    background: #000000;
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 20px;
+
+}
